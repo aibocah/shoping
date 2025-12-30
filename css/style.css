@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #F9FAFB;
+  color: #111827;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0,0,0,.05);
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-weight: 700;
+  color: #8B5CF6;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+}
+
+/* BUTTON */
+.btn-primary {
+  background: #F59E0B;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-outline {
+  border: 2px solid #8B5CF6;
+  color: #8B5CF6;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.full {
+  width: 100%;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 0;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 40px;
+}
+
+.hero h1 span {
+  color: #8B5CF6;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 0;
+}
+
+.bg-soft {
+  background: #EEF2FF;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+/* PRODUK */
+.product-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.05);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: 600;
+  color: #8B5CF6;
+}
+
+/* STEPS */
+.steps {
+  display: grid;
+  gap: 15px;
+  text-align: center;
+}
+
+/* REVIEW */
+.review-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.review-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+/* FOOTER */
+.footer {
+  background: #111827;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer a {
+  color: #F59E0B;
+  margin-left: 10px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .product-grid,
+  .review-grid,
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
