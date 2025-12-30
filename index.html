@@ -90,6 +90,25 @@
 
 </div>
   
+  <!-- CHECKOUT MODAL -->
+<div id="checkoutModal" class="modal hidden">
+  <div class="modal-box">
+    <h3>Checkout</h3>
+
+    <form id="checkoutForm">
+      <input id="nama" placeholder="Nama Lengkap" required>
+      <input id="wa" placeholder="No WhatsApp" required>
+      <textarea id="alamat" placeholder="Alamat Pengiriman" required></textarea>
+      <textarea id="custom" placeholder="Custom isi hampers"></textarea>
+
+      <button class="btn-primary full" type="submit">
+        Kirim Pesanan
+      </button>
+    </form>
+
+    <button class="close" onclick="tutupModal()">✕</button>
+  </div>
+</div>
 
 <!-- CARA PESAN -->
 <section id="cara" class="section bg-soft">
