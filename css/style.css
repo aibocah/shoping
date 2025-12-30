@@ -145,6 +145,44 @@ nav a {
   border-radius: 16px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+.product-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.full {
+  width: 100%;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+
 /* FOOTER */
 .footer {
   background: #111827;
